@@ -1,6 +1,6 @@
 # LT Coaching — Deploy Guide
 
-## Step 1 — Supabase (database + auth)
+## Step 1 — Supabase (database + auth) 
 
 1. Go to https://supabase.com and create a free account
 2. Click **New project**, name it `lt-coaching`, pick a region close to Australia
