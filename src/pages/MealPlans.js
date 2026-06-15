@@ -26,7 +26,11 @@ export default function MealPlans() {
   async function createPlan(e) {
     e.preventDefault()
     if (!name.trim()) return
-    const { data } = await supabase.from('meal_plans').insert({ name, goal }).select().single()
+    const { data, error } = await supabase.from('meal_plans').insert({ name, goal }).select().single()
+    if (error || !data) {
+      alert('Error creating plan: ' + (error?.message || 'unknown error'))
+      return
+    }
     setShowModal(false)
     setName('')
     navigate(`/meals/${data.id}`)
