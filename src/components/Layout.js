@@ -26,6 +26,9 @@ export default function Layout({ session }) {
         <NavLink to="/reports" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
           <i className="ti ti-file-text"></i>Reports
         </NavLink>
+        <NavLink to="/generator" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
+          <i className="ti ti-sparkles"></i>AI Generator
+        </NavLink>
         <div style={{ flex: 1 }} />
         <div style={{ padding: '0 16px 8px', fontSize: 12, color: 'var(--text3)' }}>
           {session.user.email}
