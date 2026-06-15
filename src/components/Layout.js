@@ -23,11 +23,14 @@ export default function Layout({ session }) {
         <NavLink to="/meals" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
           <i className="ti ti-salad"></i>Meal Plans
         </NavLink>
-        <NavLink to="/reports" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
-          <i className="ti ti-file-text"></i>Reports
-        </NavLink>
         <NavLink to="/generator" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
           <i className="ti ti-sparkles"></i>AI Generator
+        </NavLink>
+        <NavLink to="/food-library" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
+          <i className="ti ti-book"></i>Food Library
+        </NavLink>
+        <NavLink to="/reports" className={({ isActive }) => 'nav-item' + (isActive ? ' active' : '')}>
+          <i className="ti ti-file-text"></i>Reports
         </NavLink>
         <div style={{ flex: 1 }} />
         <div style={{ padding: '0 16px 8px', fontSize: 12, color: 'var(--text3)' }}>
