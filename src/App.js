@@ -9,6 +9,7 @@ import ClientDetail from './pages/ClientDetail'
 import MealPlans from './pages/MealPlans'
 import MealPlanDetail from './pages/MealPlanDetail'
 import Reports from './pages/Reports'
+import Generator from './pages/Generator'
 
 export default function App() {
   const [session, setSession] = useState(null)
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="meals" element={<MealPlans />} />
           <Route path="meals/:id" element={<MealPlanDetail />} />
           <Route path="reports" element={<Reports />} />
+          <Route path="generator" element={<Generator />} />
         </Route>
       </Routes>
     </BrowserRouter>
